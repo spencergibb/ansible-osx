@@ -6,7 +6,7 @@
       debug: msg="in spencer-gibb/ansible-osx/local.yml"
 
     - name: get time from ansible-osx/modules
-      action: time-test
+      action: time
       register: playbook_time
 
     - name: print time from ansible-osx/modules
