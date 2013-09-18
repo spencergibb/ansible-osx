@@ -1,0 +1,10 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install vagrant
+      mac_pkg: name=com.vagrant.vagrant required_version=1.3.2 state=present
+               url=http://files.vagrantup.com/packages/9a394588a6dcf97e8f916da9564088fcf242c4b3/Vagrant-1.3.2.dmg
+               dest=/tmp/vagrant.dmg dmg_package=Vagrant.pkg
+      sudo: yes
+
