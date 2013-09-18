@@ -4,3 +4,11 @@
   tasks:
     - name: print from playbook
       debug: msg="in spencer-gibb/ansible-osx/test.yml"
+
+    - name: get time from ansible-osx/modules
+      action: time
+      register: playbook_time
+
+    - name: print time from ansible-osx/modules
+      debug: msg="time {{playbook_time.time}}"
+  
