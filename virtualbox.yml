@@ -5,6 +5,6 @@
     - name: install virtualbox
       mac_pkg: pkg_name=org.virtualbox.pkg.virtualbox pkg_version=4.2.18 state=present
                url=http://download.virtualbox.org/virtualbox/4.2.18/VirtualBox-4.2.18-88780-OSX.dmg
-               dest=/tmp/virtualbox.dmg archive_type=dmg dmg_path=VirtualBox.pkg
+               dest=/tmp/virtualbox.dmg archive_type=dmg archive_path=VirtualBox.pkg
       sudo: yes
 
