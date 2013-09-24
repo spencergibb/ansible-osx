@@ -1,0 +1,10 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install iterm2
+      mac_pkg: pkg_type=app state=present
+               url=http://www.iterm2.com/downloads/beta/iTerm2-1_0_0_20130811.zip
+               dest=iTerm2.zip archive_type=zip archive_path=iTerm.app
+      sudo: yes
+

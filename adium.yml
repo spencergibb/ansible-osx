@@ -1,0 +1,10 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install Adium
+      mac_pkg: pkg_type=app state=present
+               url=http://sourceforge.net/projects/adium/files/Adium_1.5.7.dmg/download
+               dest=adium.dmg archive_path=Adium.app
+      sudo: yes
+
