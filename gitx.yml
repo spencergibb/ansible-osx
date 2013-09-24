@@ -1,0 +1,10 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install gitx
+      mac_pkg: pkg_type=app state=present
+               url=http://builds.phere.net/GitX/development/GitX-dev.dmg
+               dest=gitx.dmg archive_type=dmg archive_path=GitX.app
+      sudo: yes
+

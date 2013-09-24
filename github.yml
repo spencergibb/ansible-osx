@@ -1,0 +1,10 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install github
+      mac_pkg: pkg_type=app state=present
+               url=https://central.github.com/mac/latest
+               dest=github.zip archive_type=zip archive_path=GitHub.app
+      sudo: yes
+
