@@ -1,0 +1,10 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install libre office
+      mac_pkg: pkg_type=app state=present
+               url=libreoffice.yml
+               archive_type=dmg archive_path=Skype.app
+      sudo: yes
+

@@ -1,0 +1,10 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install truecrypt
+      mac_pkg: pkg_name=org.TrueCryptFoundation.TrueCrypt pkg_version=7.1.1 state=present
+               url=http://www.truecrypt.org/download/TrueCrypt%207.1a%20Mac%20OS%20X.dmg
+               archive_type=dmg archive_path='TrueCrypt 7.1a.mpkg'
+      sudo: yes
+
