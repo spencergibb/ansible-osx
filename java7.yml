@@ -5,7 +5,7 @@
     - name: install java 7 update 25
       mac_pkg: pkg_name=com.oracle.jdk7u25 pkg_version=1.1 state=present
                url=https://edelivery.oracle.com/otn-pub/java/jdk/7u25-b15/jdk-7u25-macosx-x64.dmg
-               dest=jdk7.dmg curl_opts='--cookie gpw_e24=http%3A%2F%2Fwww.oracle.com'
+               curl_opts='--cookie gpw_e24=http%3A%2F%2Fwww.oracle.com'
                archive_type=dmg archive_path='JDK 7 Update 25.pkg'
       sudo: yes
 

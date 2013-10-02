@@ -5,6 +5,6 @@
     - name: install dropbox
       mac_pkg: pkg_type=app state=present
                url=https://www.dropbox.com/download?plat=mac
-               dest=Dropbox.dmg archive_type=dmg archive_path=Dropbox.app
+               archive_type=dmg archive_path=Dropbox.app
       sudo: yes
 

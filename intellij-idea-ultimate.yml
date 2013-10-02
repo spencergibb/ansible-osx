@@ -5,6 +5,6 @@
     - name: install intellij idea 12 ultimate
       mac_pkg: pkg_type=app state=present
                url=http://download-ln.jetbrains.com/idea/ideaIU-12.1.4.dmg
-               dest=intellij.dmg archive_type=dmg archive_path='IntelliJ IDEA 12.app'
+               archive_type=dmg archive_path='IntelliJ IDEA 12.app'
       sudo: yes
 

@@ -5,6 +5,6 @@
     - name: install chrome beta
       mac_pkg: pkg_type=app state=present
                url=https://dl.google.com/chrome/mac/beta/GoogleChrome.dmg
-               dest=GoogleChrome.dmg archive_type=dmg archive_path='Google Chrome.app'
+               archive_type=dmg archive_path='Google Chrome.app'
       sudo: yes
 
