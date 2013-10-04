@@ -1,0 +1,10 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install usb overdrive
+      mac_pkg: pkg_name=com.usboverdrive.installer pkg_version=0
+               url=http://www.senlick.com/macsw/USB-Overdrive-302.dmg
+               archive_type=dmg archive_path='Install USB Overdrive.pkg'
+      sudo: yes
+
