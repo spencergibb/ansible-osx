@@ -3,7 +3,7 @@
 
   tasks:
     - name: install github
-      mac_pkg: pkg_type=app state=present
+      mac_pkg: pkg_type=app
                url=https://central.github.com/mac/latest
                archive_type=zip archive_path=GitHub.app
       sudo: yes

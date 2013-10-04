@@ -3,7 +3,7 @@
 
   tasks:
     - name: install Adium
-      mac_pkg: pkg_type=app state=present
+      mac_pkg: pkg_type=app
                url=http://sourceforge.net/projects/adium/files/Adium_1.5.7.dmg/download
                archive_type=dmg archive_path=Adium.app
       sudo: yes

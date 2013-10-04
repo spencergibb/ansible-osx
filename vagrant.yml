@@ -3,7 +3,7 @@
 
   tasks:
     - name: install vagrant
-      mac_pkg: pkg_name=com.vagrant.vagrant pkg_version=1.3.2 state=present
+      mac_pkg: pkg_name=com.vagrant.vagrant pkg_version=1.3.2
                url=http://files.vagrantup.com/packages/9a394588a6dcf97e8f916da9564088fcf242c4b3/Vagrant-1.3.2.dmg
                archive_type=dmg archive_path=Vagrant.pkg
       sudo: yes

@@ -3,7 +3,7 @@
 
   tasks:
     - name: install Better Touch Tool
-      mac_pkg: pkg_type=app state=present
+      mac_pkg: pkg_type=app
                url=http://www.boastr.de/BetterTouchTool.zip
                archive_type=zip archive_path=BetterTouchTool.app
       sudo: yes
