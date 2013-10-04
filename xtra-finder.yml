@@ -5,6 +5,6 @@
     - name: install XtraFinder
       mac_pkg: pkg_name=com.trankynam.xtrafinder.XtraFinder-1.pkg pkg_version=1.0
                url=http://www.trankynam.com/xtrafinder/downloads/XtraFinder.dmg
-               archive_type=dmg dmg_license=yes archive_path=XtraFinder.pkg
+               archive_type=dmg archive_path=XtraFinder.pkg
       sudo: yes
 
