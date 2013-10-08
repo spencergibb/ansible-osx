@@ -1,0 +1,8 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install homebrew
+      mac_pkg: pkg_type=script script_creates=/usr/local/bin/brew
+               script_prefix='echo | ' script_exe=ruby
+               url=https://raw.github.com/mxcl/homebrew/go
