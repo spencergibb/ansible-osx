@@ -2,9 +2,9 @@
 - hosts: workstation
 
   tasks:
-    - name: install libre office
+    - name: install skype
       mac_pkg: pkg_type=app
-               url=libreoffice.yml
+               url=http://download.skype.com/macosx/Skype_6.9.0.517.dmg
                archive_type=dmg archive_path=Skype.app
       sudo: yes
 
