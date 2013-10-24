@@ -1,0 +1,11 @@
+---
+- hosts: workstation
+
+  tasks:
+    # from http://support.apple.com/kb/dl1572
+    - name: install java 6.65 from apple
+      mac_pkg: pkg_name=com.apple.pkg.JavaForMacOSX107 pkg_version=1.0.0.0.1.1247562015
+               url=http://support.apple.com/downloads/DL1572/en_US/JavaForOSX2013-05.dmg
+               archive_type=dmg archive_path=JavaForOSX.pkg
+      sudo: yes
+
