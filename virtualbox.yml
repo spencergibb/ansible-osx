@@ -3,8 +3,8 @@
 
   tasks:
     - name: install virtualbox
-      mac_pkg: pkg_name=org.virtualbox.pkg.virtualbox pkg_version=4.3.0
-               url=http://download.virtualbox.org/virtualbox/4.3.0/VirtualBox-4.3.0-89960-OSX.dmg
+      mac_pkg: pkg_name=org.virtualbox.pkg.virtualbox pkg_version=4.3.2
+               url=http://download.virtualbox.org/virtualbox/4.3.2/VirtualBox-4.3.2-90405-OSX.dmg
                archive_type=dmg archive_path=VirtualBox.pkg
       sudo: yes
 
