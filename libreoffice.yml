@@ -4,7 +4,7 @@
   tasks:
     - name: install libre office
       mac_pkg: pkg_type=app
-               url=http://download.documentfoundation.org/libreoffice/stable/4.1.1/mac/x86/LibreOffice_4.1.1_MacOS_x86.dmg
+               url=http://download.documentfoundation.org/libreoffice/stable/4.2.0/mac/x86/LibreOffice_4.2.0_MacOS_x86.dmg
                archive_type=dmg archive_path=LibreOffice.app
       sudo: yes
 
