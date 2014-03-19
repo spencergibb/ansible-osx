@@ -14,14 +14,12 @@
       sudo: yes
       when: mac_major_minor_version == "10.9"
 
-  tasks:
     - name: install macvim Mountain Lion
       mac_pkg: pkg_type=app archive_type=tar url={{mountain_lion_url}}
                archive_path={{archive_path}} creates={{creates}}
       sudo: yes
       when: mac_major_minor_version == "10.8"
 
-  tasks:
     - name: install macvim Lion
       mac_pkg: pkg_type=app archive_type=tar url={{lion_url}}
                archive_path={{archive_path}} creates={{creates}}
