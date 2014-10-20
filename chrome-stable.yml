@@ -1,0 +1,10 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install chrome stable
+      mac_pkg: pkg_type=app
+               url=https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg
+               archive_type=dmg archive_path='Google Chrome.app'
+      sudo: yes
+
