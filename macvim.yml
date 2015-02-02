@@ -1,13 +1,20 @@
 ---
 - hosts: workstation
   vars:
-    mavericks_url: https://github.com/b4winckler/macvim/releases/download/snapshot-72/MacVim-snapshot-72-Mavericks.tbz
-    mountain_lion_url: https://github.com/eee19/macvim/releases/download/snapshot-72/MacVim-snapshot-72-Mountain-Lion.tbz
-    lion_url: https://github.com/eee19/macvim/releases/download/snapshot-72/MacVim-snapshot-72-Lion.tbz
-    archive_path: MacVim-snapshot-72/MacVim.app
+    yosemite_url: https://github.com/eee19/macvim/releases/download/snapshot-73/MacVim-snapshot-73-Yosemite.tbz
+    mavericks_url: https://github.com/b4winckler/macvim/releases/download/snapshot-73/MacVim-snapshot-73-Mavericks.tbz
+    mountain_lion_url: https://github.com/eee19/macvim/releases/download/snapshot-73/MacVim-snapshot-73-Mountain-Lion.tbz
+    lion_url: https://github.com/eee19/macvim/releases/download/snapshot-73/MacVim-snapshot-73-Lion.tbz
+    archive_path: MacVim-snapshot-73/MacVim.app
     creates: MacVim.app
 
   tasks:
+    - name: install macvim Yosemite
+      mac_pkg: pkg_type=app archive_type=tar url={{yosemite_url}}
+               archive_path={{archive_path}} creates={{creates}}
+      sudo: yes
+      when: mac_major_minor_version == "10.10"
+
     - name: install macvim Mavericks
       mac_pkg: pkg_type=app archive_type=tar url={{mavericks_url}}
                archive_path={{archive_path}} creates={{creates}}
