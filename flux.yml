@@ -1,0 +1,9 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install istat menus
+      mac_pkg: pkg_type=app
+               url=https://d38qbqfndhlqd2.cloudfront.net/Flux34-3.zip
+               archive_type=zip archive_path='Flux.app'
+      sudo: yes

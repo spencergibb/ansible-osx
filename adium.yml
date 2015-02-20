@@ -4,7 +4,7 @@
   tasks:
     - name: install Adium
       mac_pkg: pkg_type=app
-               url=http://sourceforge.net/projects/adium/files/Adium_1.5.7.dmg/download
+               url=http://downloads.sourceforge.net/project/adium/Adium_1.5.7.dmg?r=&ts=1424418546&use_mirror=iweb
                archive_type=dmg archive_path=Adium.app
       sudo: yes
 
