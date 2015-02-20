@@ -1,0 +1,9 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install kaleidoscope
+      mac_pkg: pkg_type=app
+               url=http://cdn.kaleidoscopeapp.com/releases/Kaleidoscope-2.1.0-134.zip
+               archive_type=zip archive_path='Kaleidoscope.app'
+      sudo: yes
