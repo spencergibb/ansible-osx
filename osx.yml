@@ -60,7 +60,7 @@
     # Turn off keyboard illumination when computer is not used for 5 minutes
     - name: Automatically illuminate built-in MacBook keyboard in low light
       shell: defaults write com.apple.BezelServices kDim -bool true
-      defaults write com.apple.BezelServices kDimTime -int 300
+              defaults write com.apple.BezelServices kDimTime -int 300
 
     - name: Disable auto-correct
       shell: defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
