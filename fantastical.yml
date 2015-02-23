@@ -1,0 +1,9 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install fantastical
+      mac_pkg: pkg_type=app
+               url=https://flexibits.com/fantastical/download
+               archive_type=zip archive_path='Fantastical.app'
+      sudo: yes

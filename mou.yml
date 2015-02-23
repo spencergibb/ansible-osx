@@ -1,0 +1,10 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install mou
+      mac_pkg: pkg_type=app
+               url=http://mouapp.com/download/Mou.zip
+               archive_type=zip archive_path='Mou.app'
+      sudo: yes
+

@@ -1,0 +1,10 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install istat menus
+      mac_pkg: pkg_type=app
+               url=http://s3.amazonaws.com/bjango/files/istatmenus5/istatmenus5.03.zip
+               archive_type=zip archive_path='iStat Menus.app'
+      sudo: yes
+

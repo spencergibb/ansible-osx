@@ -1,0 +1,10 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install webstorm
+      mac_pkg: pkg_type=app
+               url=https://download.jetbrains.com/webstorm/WebStorm-9.0.3.dmg
+               archive_type=dmg archive_path='WebStorm.app'
+      sudo: yes
+

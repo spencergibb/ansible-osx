@@ -1,0 +1,10 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install android studio
+      mac_pkg: pkg_type=app
+               url=https://dl.google.com/dl/android/studio/install/1.1.0/android-studio-ide-135.1740770-mac.dmg
+               archive_type=dmg archive_path='Android Studio.app'
+      sudo: yes
+

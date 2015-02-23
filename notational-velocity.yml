@@ -1,0 +1,12 @@
+
+
+---
+- hosts: workstation
+
+  tasks:
+    - name: install notational velocity
+      mac_pkg: pkg_type=app
+               url=http://notational.net/NotationalVelocity.zip
+               archive_type=zip archive_path=Notational Velocity.app
+      sudo: yes
+

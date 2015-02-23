@@ -1,0 +1,10 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install tower
+      mac_pkg: pkg_type=app
+               url=http://fournova-website-assets.s3.amazonaws.com/tower-app/Tower-2.zip
+               archive_type=zip archive_path='Tower.app'
+      sudo: yes
+
