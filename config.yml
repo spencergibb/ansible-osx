@@ -1,10 +1,7 @@
 ---
-# cache_dir: ~/Library/Caches/battleschool
+cache_dir: ~/Library/Caches/battleschool
 
 sources:
-  local:
-    - playbook1.yml
-
   git:
     - name: 'osx'
       repo: 'https://github.com/RaviH/ansible-osx.git'
