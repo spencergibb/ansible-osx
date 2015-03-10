@@ -1,0 +1,12 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install apps from homebrew
+      homebrew: name={{item}} state=present update_homebrew=yes
+      with_items:
+          - maven
+          - ruby
+          - tomcat
+          - wget
+          - cassandra

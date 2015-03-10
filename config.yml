@@ -9,13 +9,13 @@ sources:
     - name: 'osx'
       repo: 'https://github.com/RaviH/ansible-osx.git'
       playbooks:
-         - homebrew.yml                 #must come before any use of homebrew module
+         - homebrew.yml     
+         - brew-apps.yml
          - chrome-stable.yml
          - java7.yml
          - java8.yml
          - intellij-idea-ultimate13.yml
          - total-terminal.yml
-         - cassandra.yml
 #         - dropbox.yml
 #         - macports.yml                #must come before any use of macports module
 #         - vagrant.yml
