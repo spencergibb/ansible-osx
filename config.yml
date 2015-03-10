@@ -1,0 +1,33 @@
+---
+cache_dir: ~/Library/Caches/battleschool
+
+sources:
+  git:
+    - name: 'osx'
+      repo: 'https://github.com/RaviH/ansible-osx.git'
+      playbooks:
+         - homebrew.yml     
+         - brew-apps.yml
+         - chrome-stable.yml
+         - java7.yml
+         - java8.yml
+         - intellij-idea-ultimate13.yml
+         - total-terminal.yml
+#         - dropbox.yml
+#         - macports.yml                #must come before any use of macports module
+#         - vagrant.yml
+#         - virtualbox.yml
+#         - alfred.yml
+#         - sublime2.yml
+#         - sublime3.yml
+#         - iterm2.yml
+#         - macvim.yml
+#         - better-touch-tool.yml
+#         - adium.yml
+#         - github.yml
+#         - gitx.yml
+#         - libreoffice.yml
+#         - sequel-pro.yml
+#         - truecrypt.yml
+#         - usb-overdrive.yml
+#         - xtra-finder.yml
