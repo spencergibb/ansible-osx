@@ -1,0 +1,11 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install java 8 update 40
+      mac_pkg: pkg_name=com.oracle.jdk8u40 pkg_version=1.1
+               url=http://download.oracle.com/otn-pub/java/jdk/8u40-b25/jdk-8u40-macosx-x64.dmg
+               curl_opts="-L --cookie oraclelicense=accept-securebackup-cookie"
+               archive_type=dmg archive_path='JDK 8 Update 40.pkg'
+      sudo: yes
+
