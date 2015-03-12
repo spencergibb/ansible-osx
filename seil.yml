@@ -1,0 +1,10 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install Seil (from Karabiner)
+      mac_pkg: #pkg_name=org.pqrs.driver.Karabiner pkg_version=10.6.0
+               url=https://pqrs.org/osx/karabiner/files/Seil-11.0.0.dmg
+               archive_type=dmg archive_path='Seil.pkg'
+      sudo: yes
+
