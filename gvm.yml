@@ -1,0 +1,12 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: get gvm script
+      get_url: url=http://get.gvmtool.net dest=/tmp/gvm.sh
+
+    - name: change file permission to be executable
+      command: chmod +x /tmp/gvm.sh
+
+    - name: install gvm
+      script: /tmp/gvm.sh
