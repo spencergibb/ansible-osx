@@ -1,0 +1,12 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: get zsh script
+      get_url: url=http://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh dest=/tmp/zsh.sh
+
+    - name: change file permission to be executable
+      command: chmod +x /tmp/zsh.sh
+
+    - name: install zsh
+      script: /tmp/zsh.sh
