@@ -1,0 +1,7 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install mysqlworkbench
+      command: brew install caskroom/cask/brew-cask 
+               creates=/usr/local/bin/brew-cask.rb
