@@ -1,0 +1,9 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install Karabiner
+      mac_pkg: url=https://pqrs.org/osx/karabiner/files/Karabiner-10.6.0.dmg
+               archive_type=dmg archive_path='Karabiner.pkg'
+      sudo: yes
+
