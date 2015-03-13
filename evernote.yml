@@ -1,0 +1,8 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install evernote
+      homebrew_cask: name={{item}} state=present
+      with_items:
+          - evernote
