@@ -1,0 +1,9 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install Keepassx
+      mac_pkg: pkg_type=app
+               url=https://www.keepassx.org/releases/KeePassX-0.4.3.dmg
+               archive_type=dmg archive_path=KeePassX.app
+      sudo: yes
