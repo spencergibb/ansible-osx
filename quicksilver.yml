@@ -1,0 +1,9 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install Quicksilver
+      mac_pkg: pkg_type=app
+               url=http://cdn.qsapp.com/plugins/files/com.blacktree.Quicksilver__16401.dmg
+               archive_type=dmg archive_path=Quicksilver.app
+      sudo: yes
