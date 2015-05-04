@@ -1,0 +1,9 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install Quicksilver
+      mac_pkg: pkg_type=app
+               url=http://qs0.qsapp.com/plugins/download.php
+               archive_type=dmg archive_path=Quicksilver.app
+      sudo: yes
