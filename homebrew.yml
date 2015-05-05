@@ -4,5 +4,5 @@
   tasks:
     - name: install homebrew
       mac_pkg: pkg_type=script script_creates=/usr/local/bin/brew
-               script_prefix='echo | ' script_exe=ruby
+               script_data='\n' script_exe=/usr/bin/ruby
                url=https://raw.githubusercontent.com/Homebrew/install/master/install
