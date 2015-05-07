@@ -1,0 +1,9 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install Macfusion
+      mac_pkg: pkg_type=app
+               url=http://macfusionapp.org/releases/Macfusion_2.0.4.zip
+               archive_type=zip archive_path='Macfusion.app'
+      sudo: yes
