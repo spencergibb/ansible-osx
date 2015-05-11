@@ -1,0 +1,9 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install Fuse for OSX
+      mac_pkg: pkg_name=com.github.osxfuse.pkg.Core pkg_version=2.7.5
+               url=http://sourceforge.net/projects/osxfuse/files/osxfuse-2.7.5/osxfuse-2.7.5.dmg/download
+               archive_type=dmg archive_path='Install OSXFUSE 2.7.pkg'
+      sudo: yes
