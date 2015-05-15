@@ -4,6 +4,6 @@
   tasks:
     - name: install atom
       mac_pkg: pkg_type=app
-               url=https://s3.amazonaws.com/github-cloud/releases/3228505/ba353ca2-b775-11e4-9d27-7a45c001864f.zip?response-content-disposition=attachment%3B%20filename%3Datom-mac.zip&response-content-type=application/octet-stream&AWSAccessKeyId=AKIAISTNZFOVBIJMK3TQ&Expires=1424411516&Signature=YbfZsKNELIiE%2BTeTJr3y%2FlrXV04%3D
-               archive_type=zip archive_path='Atom.app'
+               url=https://atom.io/download/mac
+               curl_opts="-L" archive_type=zip archive_path='Atom.app'
       sudo: yes
