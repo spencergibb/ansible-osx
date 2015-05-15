@@ -5,5 +5,5 @@
     - name: install atom
       mac_pkg: pkg_type=app
                url=https://atom.io/download/mac
-               curl_opts="-L" archive_type=zip archive_path='Atom.app'
+               archive_type=zip archive_path='Atom.app'
       sudo: yes
