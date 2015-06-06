@@ -4,7 +4,7 @@
   tasks:
     - name: install skype
       mac_pkg: pkg_type=app
-               url=http://www.skype.com/en/download-skype/skype-for-mac/downloading/
+               url=http://www.skype.com/go/getskype-macosx
                archive_type=dmg archive_path=Skype.app
       sudo: yes
 
