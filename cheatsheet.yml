@@ -1,0 +1,9 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install Cheatsheet
+      mac_pkg: pkg_type=app
+               url=http://www.mediaatelier.com/CheatSheet/download.php
+               archive_type=zip archive_path=CheatSheet.app
+      sudo: yes
