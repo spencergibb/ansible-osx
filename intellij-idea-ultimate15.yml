@@ -1,0 +1,9 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install intellij idea 15 ultimate
+      mac_pkg: pkg_type=app
+               url=http://download.jetbrains.com/idea/ideaIU-15.0-custom-jdk-bundled.dmg
+               archive_type=dmg archive_path='IntelliJ IDEA 15.app'
+      sudo: yes

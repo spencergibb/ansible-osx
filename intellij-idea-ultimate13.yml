@@ -7,4 +7,3 @@
                url=http://download.jetbrains.com/idea/ideaIU-13.1.dmg
                archive_type=dmg archive_path='IntelliJ IDEA 13.app'
       sudo: yes
-

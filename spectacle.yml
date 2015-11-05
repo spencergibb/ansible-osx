@@ -2,9 +2,9 @@
 - hosts: workstation
 
   tasks:
+    # https://www.spectacleapp.com/
     - name: install spectacle
       mac_pkg: pkg_type=app
-               url=https://s3.amazonaws.com/spectacle/downloads/Spectacle+0.8.8.zip
+               url=https://s3.amazonaws.com/spectacle/downloads/Spectacle+1.0.1.zip
                archive_type=zip archive_path='Spectacle.app'
       sudo: yes
-

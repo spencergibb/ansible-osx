@@ -1,0 +1,9 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install chrome canary
+      mac_pkg: pkg_type=app
+               url=https://dl.google.com/release2/q/canary/googlechrome.dmg
+               archive_type=dmg archive_path='Google Chrome Canary.app'
+      sudo: yes
