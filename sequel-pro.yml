@@ -4,7 +4,7 @@
   tasks:
     - name: install sequel pro
       mac_pkg: pkg_type=app
-               url=https://sequel-pro.googlecode.com/files/sequel-pro-1.0.2.dmg
+               url=https://github.com/sequelpro/sequelpro/releases/download/release-1.1/sequel-pro-1.1.dmg
                archive_type=dmg archive_path='Sequel Pro.app'
       sudo: yes
 

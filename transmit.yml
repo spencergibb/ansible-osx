@@ -4,6 +4,6 @@
   tasks:
     - name: install transmit
       mac_pkg: pkg_type=app
-               url=http://download.panic.com/transmit/Transmit%204.4.8.zip
+               url=http://download.panic.com/transmit/Transmit%204.4.10.zip
                archive_type=zip archive_path='Transmit.app'
       sudo: yes

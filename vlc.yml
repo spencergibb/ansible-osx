@@ -4,6 +4,6 @@
   tasks:
     - name: install vlc
       mac_pkg: pkg_type=app
-               url=http://get.videolan.org/vlc/2.1.5/macosx/vlc-2.1.5.dmg
+               url=http://get.videolan.org/vlc/2.2.1/macosx/vlc-2.2.1.dmg
                archive_type=dmg archive_path=VLC.app
       sudo: yes
