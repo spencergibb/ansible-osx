@@ -1,0 +1,9 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install php storm idea 10
+      mac_pkg: pkg_type=app
+               url=http://download.jetbrains.com/webide/PhpStorm-10.0.2.dmg
+               archive_type=dmg archive_path='PhpStorm IDEA 10.app'
+      sudo: yes
