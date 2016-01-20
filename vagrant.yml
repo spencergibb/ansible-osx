@@ -3,8 +3,8 @@
 
   tasks:
     - name: install vagrant
-      mac_pkg: pkg_name=com.vagrant.vagrant pkg_version=1.7.2
-               url=https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.2.dmg
+      mac_pkg: pkg_name=com.vagrant.vagrant pkg_version=1.7.4
+               url=https://releases.hashicorp.com/vagrant/1.7.4/vagrant_1.7.4.dmg
                archive_type=dmg archive_path=Vagrant.pkg
       sudo: yes
 

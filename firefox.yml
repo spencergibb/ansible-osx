@@ -1,0 +1,9 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install firefox
+      mac_pkg: pkg_type=app
+               url=https://download.mozilla.org/?product=firefox-42.0-SSL&os=osx&lang=en-US
+               archive_type=dmg archive_path='Firefox.app'
+      sudo: yes
